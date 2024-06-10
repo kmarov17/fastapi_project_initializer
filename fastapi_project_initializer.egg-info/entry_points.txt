@@ -1,0 +1,2 @@
+[console_scripts]
+fastapi-init = fastapi_project_initializer.main:main

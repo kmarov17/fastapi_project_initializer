@@ -1,0 +1,11 @@
+setup.py
+fastapi_initializer/__init__.py
+fastapi_initializer/fastapi_initializer.py
+fastapi_project_initializer/__init__.py
+fastapi_project_initializer/main.py
+fastapi_project_initializer.egg-info/PKG-INFO
+fastapi_project_initializer.egg-info/SOURCES.txt
+fastapi_project_initializer.egg-info/dependency_links.txt
+fastapi_project_initializer.egg-info/entry_points.txt
+fastapi_project_initializer.egg-info/requires.txt
+fastapi_project_initializer.egg-info/top_level.txt
