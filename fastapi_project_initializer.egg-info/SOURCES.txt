@@ -1,3 +1,4 @@
+README.md
 setup.py
 fastapi_initializer/__init__.py
 fastapi_initializer/fastapi_initializer.py
