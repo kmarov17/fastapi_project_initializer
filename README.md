@@ -61,8 +61,8 @@ my_fastapi_project/
 │   ├── models/            # Data model files
 │   ├── routes/            # Routing (routes) files
 │   ├── services/          # Application service files
-│   └── utils/             # Utilities and tools
-├── tests/                 # Unit test files for the application
+│   |── utils/             # Utilities and tools
+|   └── tests/             # Unit test files for the application
 ├── main.py                # Main application entry point
 ├── requirements.txt       # File listing the Python dependencies
 ├── .gitignore             # File to ignore specific files/folders in git
