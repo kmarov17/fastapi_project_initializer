@@ -2,6 +2,15 @@
 
 The `fastapi_project_initializer` library provides an easy way to initialize a FastAPI project by cloning a GitHub repository, creating a virtual environment, and installing dependencies. This library simplifies the setup process, allowing you to quickly get started with a standardized FastAPI project structure.
 
+By
+    ***   ***   ******   ******   ***********   ***********   **********   ***  ***
+    ***  **     ******   ******   ***********   ***     ***   **********   ***  ***
+    ******      *** *** *** ***   ***     ***   ***     ***   ***    ***   ***  ***
+    ******      ***   ***   ***   ***********   *********     ***    ***   ***  ***
+    ***  **     ***    *    ***   ***     ***   ***     **    **********    **  **
+    ***   ***   ***         ***   ***     ***   ***     ***   **********     ****
+    
+
 ## Features
 
 - Clone a specified GitHub repository
@@ -104,15 +113,6 @@ Install the dependencies:
 pip install -r requirements.txt
 ```
 
-```
-By
-    ***   ***   ******   ******   ***********   ***********   **********   ***  ***
-    ***  **     ******   ******   ***********   ***     ***   **********   ***  ***
-    ******      *** *** *** ***   ***     ***   ***     ***   ***    ***   ***  ***
-    ******      ***   ***   ***   ***********   *********     ***    ***   ***  ***
-    ***  **     ***    *    ***   ***     ***   ***     **    **********    **  **
-    ***   ***   ***         ***   ***     ***   ***     ***   **********     ****
-```
 
 ## License
 
