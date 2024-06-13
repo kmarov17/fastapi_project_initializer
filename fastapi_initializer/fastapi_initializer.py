@@ -3,6 +3,7 @@ import subprocess
 import git
 import venv
 import platform
+import shutil
 
 class FastAPIProjectInitializer:
     def __init__(self, repo_url, project_dir):
@@ -44,9 +45,15 @@ class FastAPIProjectInitializer:
         else:
             print(f"No requirements.txt found in {self.project_dir}")
 
+    def detach_repo(self):
+        git_dir = os.path.join(self.project_dir, '.git')
+        if os.path.exists(git_dir):
+            shutil.rmtree(git_dir)
+            print(f"Removed .git directory from {self.project_dir}")
+
     def initialize(self):
         self.clone_repo()
+        self.detach_repo()  # Detach from the original repo
         env_dir = self.create_virtualenv()
         self.activate_virtualenv(env_dir)
         self.install_dependencies(env_dir)
-
