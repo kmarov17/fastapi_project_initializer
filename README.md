@@ -84,7 +84,7 @@ To contribute to this project, follow these steps:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/fastapi_project_initializer.git
+git clone https://github.com/kmarov17/fastapi_project_initializer.git
 cd fastapi_project_initializer
 ```
 
