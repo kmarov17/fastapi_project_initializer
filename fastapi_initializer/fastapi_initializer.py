@@ -6,9 +6,10 @@ import platform
 import shutil
 
 class FastAPIProjectInitializer:
-    def __init__(self, repo_url, project_dir):
+    def __init__(self, repo_url, project_dir, proxy_url):
         self.repo_url = repo_url
         self.project_dir = project_dir
+        self.proxy_url = proxy_url
 
     def clone_repo(self):
         if not os.path.exists(self.project_dir):
@@ -40,7 +41,10 @@ class FastAPIProjectInitializer:
         requirements_path = os.path.join(self.project_dir, 'requirements.txt')
         if os.path.exists(requirements_path):
             pip_path = os.path.join(env_dir, 'bin', 'pip')
-            subprocess.check_call([pip_path, 'install', '-r', requirements_path])
+            if self.proxy_url is None:
+                subprocess.check_call([pip_path, 'install', '-r', requirements_path])
+            else:
+                subprocess.check_call([pip_path, 'install', f'--proxy {self.proxy_url}', '-r', requirements_path])
             print(f"Installed dependencies from {requirements_path}")
         else:
             print(f"No requirements.txt found in {self.project_dir}")
