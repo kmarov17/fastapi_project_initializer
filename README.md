@@ -66,6 +66,7 @@ my_fastapi_project/
 ├── main.py                # Main application entry point
 ├── requirements.txt       # File listing the Python dependencies
 ├── .gitignore             # File to ignore specific files/folders in git
+├── Dockerfile             # File to build fastapi docker image
 └── README.md              # Project documentation
 ```
 
